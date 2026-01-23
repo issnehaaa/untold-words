@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <!-- ✅ REQUIRED FOR MOBILE RESPONSIVENESS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Untold Words</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="container">
+    <h1>Untold Words</h1>
+    <p class="subtitle">Some words are meant to be found.</p>
+
+    <!-- 🔍 SEARCH -->
+    <div class="card">
+      <input
+        id="searchInput"
+        placeholder="Who are you looking for?"
+      />
+      <button id="searchBtn">Find my words</button>
+      <p id="searchStatus" class="hint-label hidden"></p>
+    </div>
+
+    <!-- CREATE NOTE FORM -->
+    <form id="noteForm" class="card">
+      <input id="recipient" placeholder="For" required />
+      <input id="hint" placeholder="Hint" required />
+      <input id="song" placeholder="Song link (YouTube / Spotify)" required />
+      <textarea id="message" placeholder="Your message..." required></textarea>
+      <input id="pass" type="password" placeholder="Passcode" required />
+      <button type="submit">Seal the note</button>
+    </form>
+
+    <!-- NOTES CONTAINER -->
+    <div id="notesContainer"></div>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
