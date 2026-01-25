@@ -11,6 +11,7 @@ body {
  text-align: center;
 }
 
+
 h1 {
  font-weight: normal;
 }
@@ -20,6 +21,7 @@ h1 {
  margin-bottom: 30px;
 }
 
+
 .card, .note-card {
  background: #fff7f7;
  padding: 20px;
@@ -27,6 +29,7 @@ h1 {
  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
  margin-bottom: 22px;
 }
+
 
 input, textarea {
  width: 92%;
@@ -60,6 +63,7 @@ button:hover {
  color: #caa45d;
  text-decoration: none;
 }
+
 
 .hint-label {
  font-style: italic;
