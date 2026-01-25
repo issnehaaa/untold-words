@@ -22,7 +22,7 @@ const searchStatus = document.getElementById("searchStatus");
 
 const notesRef = collection(db, "notes");
 
-// URL validation
+
 function isValidURL(url) {
  try {
    new URL(url);
@@ -32,10 +32,10 @@ function isValidURL(url) {
  }
 }
 
-// Load notes
+
 window.addEventListener("DOMContentLoaded", fetchNotes);
 
-// Submit note
+
 form.addEventListener("submit", async (e) => {
  e.preventDefault();
 
@@ -58,7 +58,7 @@ form.addEventListener("submit", async (e) => {
  appendNoteToDOM(noteData);
 });
 
-// Append note
+
 function appendNoteToDOM(note) {
  const card = document.createElement("div");
  card.className = "note-card";
@@ -109,7 +109,7 @@ async function fetchNotes() {
  });
 }
 
-// 🔍 SEARCH SUBMIT (FINAL STATE)
+
 searchBtn.addEventListener("click", () => {
  const query = searchInput.value.trim().toLowerCase();
  const notes = document.querySelectorAll(".note-card");
