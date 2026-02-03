@@ -97,7 +97,7 @@ function appendNoteToDOM(note) {
  notesContainer.appendChild(card);
 }
 
-// Fetch notes
+
 async function fetchNotes() {
  const q = query(notesRef, orderBy("recipient"));
  const snapshot = await getDocs(q);
@@ -116,7 +116,7 @@ searchBtn.addEventListener("click", () => {
 
  let found = 0;
 
- form.style.display = "none"; // hide create form
+ form.style.display = "none"; 
 
  notes.forEach((card) => {
    const recipient = card
